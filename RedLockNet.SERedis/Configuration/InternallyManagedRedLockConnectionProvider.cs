@@ -50,7 +50,8 @@ namespace RedLockNet.SERedis.Configuration
 					Ssl = endPoint.Ssl,
 					SslProtocols = endPoint.SslProtocols,
 					Password = endPoint.Password,
-					ConfigCheckSeconds = endPoint.ConfigCheckSeconds ?? DefaultConfigCheckSeconds
+					ConfigCheckSeconds = endPoint.ConfigCheckSeconds ?? DefaultConfigCheckSeconds,
+					AllowAdmin = endPoint.AllowAdmin
 				};
 
 				foreach (var e in endPoint.EndPoints)

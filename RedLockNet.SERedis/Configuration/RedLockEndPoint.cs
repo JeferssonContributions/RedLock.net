@@ -102,5 +102,11 @@ namespace RedLockNet.SERedis.Configuration
 		/// Defaults to 10 seconds if not specified.
 		/// </summary>
 		public int? ConfigCheckSeconds { get; set; }
+
+		/// <summary>
+		/// The flag AllowAdmin for the redis connection.
+		/// Defaults is false.
+		/// </summary>
+		public bool AllowAdmin { get; set; }
 	}
 }
